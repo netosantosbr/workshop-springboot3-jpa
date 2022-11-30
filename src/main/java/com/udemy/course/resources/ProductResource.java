@@ -28,8 +28,8 @@ public class ProductResource {
 	
 	@GetMapping(value = "/{id}")
 	public ResponseEntity<Product> findById(@PathVariable Long id) {
-		Product user = service.findById(id);
+		Product product = service.findById(id);
 		
-		return ResponseEntity.ok().body(user);
+		return ResponseEntity.ok().body(product);
 	}
 }
